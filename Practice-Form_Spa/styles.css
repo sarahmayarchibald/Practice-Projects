@@ -1,0 +1,17 @@
+html {
+    background-image: url(sauna.jpg);
+    background-size: cover 
+}
+
+body {
+    background-color: rgba(147,119,107, 0.75);
+    text-align: center;
+}
+
+h1 {
+    color: #D3C1B4;
+}
+
+h2, .title {
+    color: #2e2323;
+}
