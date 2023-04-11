@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left, #14e0dd, #0d7676);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h3 {
+    margin: 1rem 0;
+    color: #005959;
+}
+
+h2, a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Glass effect */
+.glass {
+    background: #fff;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Circle effects */
+.circle1, .circle2 {
+    background: #fff;
+    background: linear-gradient(to right top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    bottom: 5%;
+    left: 5%;
+}
+.circle2 {
+    top: 5%;
+    right: 5%;
+}
+
+/* Panel */
+#panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    min-height: 2.5rem;
+    max-height: 35rem;
+}
+
+/* Images */
+.logo {
+    width: 100%;
+    min-height: 25%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Description */
+.description {
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: .9rem;
+}
+
+/* Button */
+a {
+    margin: 1.5rem 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: linear-gradient(to bottom right, #178e8e, #005959);
+    transition: background .4s ease-in-out;
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+    background: linear-gradient(to top right, #14e0dd, #fff);
+    color: #005959;
+    box-shadow: -2px 2px 10px #005959;
+}
+
+@media (min-width: 900px) {
+        .glass, #panel {
+            max-width: 42rem;
+        }
+}
+
+@media (min-width: 765px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .glass, #panel {
+        min-height: 35rem;
+    }
+
+
+    #panel {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        height: 100%;
+        width: 33%;
+        padding: 0.5rem 1.5rem;
+        margin: auto;
+    }
+
+    a {
+        font-size: .9rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
